@@ -17,12 +17,12 @@ namespace ProblemThree_CompleteSolution_BL
         }
         public override  double PayPerPiece(int quantity)
         {
-            TotalBillValue = quantity * ItemPrice[this.ItemCode];
+            TotalBillValue = quantity * ItemPrice[ItemCode];
             return TotalBillValue;
         }
         public override double PayPerWeight(int weight)
         {
-            TotalBillValue = weight * ItemPrice[this.ItemCode];
+            TotalBillValue = weight * ItemPrice[ItemCode];
             return TotalBillValue;
 
         }
