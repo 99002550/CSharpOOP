@@ -15,7 +15,9 @@ namespace ProblemThree_CompleteSolution_BL
         public GourmetShop(int iCode,
         string iName, Dictionary<int, double> iPrice)
         {
-            
+            this.ItemCode = iCode;
+            this.ItemName = iName;
+            this.ItemPrice = iPrice;
         }
         
         public abstract double PayPerPiece(int quantity);
